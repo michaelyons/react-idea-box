@@ -13,7 +13,7 @@ export default class App extends Component {
     const { ideas } = this.state;
 
     return (
-      <div className="App">
+      <div>
         <Header ideas={ideas} />
       </div>
     );

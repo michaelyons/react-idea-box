@@ -29,6 +29,8 @@ export default class Header extends Component {
   render() {
     const { title, body, ideas} = this.state;
 
-    return ()
+    return (
+      
+    )
   }
 }

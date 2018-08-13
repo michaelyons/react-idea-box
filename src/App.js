@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "./Header";
-import logo from "./logo.svg";
 import "./App.css";
 
 export default class App extends Component {
@@ -14,7 +13,10 @@ export default class App extends Component {
 
     return (
       <div>
-        <Header ideas={ideas} />
+        <header>
+          <h1>IdeaBox</h1>
+          <Header ideas={ideas} />
+        </header>
       </div>
     );
   }

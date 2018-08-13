@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class IdeaCard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      quality: props.IdeaCard.quality
-    };
-    this.qualities = ["swill", "neat", "genius"];
-  }
+const IdeaCard = ({ title, body, id, deleteIdea }) => {
+  return (
+    <div>
+      <h3>{title}</h3>
+      <p>{body}</p>
+      <button onClick={() => deleteIdea(id)}>X</button>
+    </div>
+  );
+};
 
-  render() {}
-}
+export default IdeaCard;
